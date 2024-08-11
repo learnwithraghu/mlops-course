@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/raghunandanask/Desktop/github-repo/mlops-course/payment_gateway_ml_integration/mlflow_code/mlruns/134572180162740592/221ffa31e74745b08dbe83ab87cf0b5b/artifacts
+end_time: 1723377259896
+entry_point_name: ''
+experiment_id: '134572180162740592'
+lifecycle_stage: active
+run_id: 221ffa31e74745b08dbe83ab87cf0b5b
+run_name: efficient-roo-387
+run_uuid: 221ffa31e74745b08dbe83ab87cf0b5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723377138229
+status: 3
+tags: []
+user_id: raghunandanask

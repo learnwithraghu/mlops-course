@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Comments</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Comments Sentiment Analysis</h2>
+    <button onclick="location.reload();">Refresh</button>
+    <table>
+        <tr>
+            <th>Comment</th>
+            <th>Sentiment</th>
+        </tr>
+        {% for comment, sentiment in comments %}
+        <tr>
+            <td>{{ comment }}</td>
+            <td>{{ sentiment }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Enter New Comment</a>
+</body>
+</html>

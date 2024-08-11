@@ -1,0 +1,6 @@
+mlflow
+scikit-learn
+pandas
+tensorflow==2.16.1
+Pillow==9.1.0
+numpy
